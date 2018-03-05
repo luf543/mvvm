@@ -14,7 +14,7 @@ Compile.prototype = {
         var fragment = document.createDocumentFragment(),
             child;
 
-        // 将原生节点拷贝到fragment
+        // 将原生节点拷贝到fragment,fragment.appendChild(child)相当于剪切功能，将child节点剪切到fragment里面
         while (child = el.firstChild) {
             fragment.appendChild(child);
         }
